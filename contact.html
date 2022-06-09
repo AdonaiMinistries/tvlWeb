@@ -54,7 +54,7 @@
                   </div>
                 </div>
                 <!-- RD Navbar Collapse-->
-                <div class="rd-navbar-collapse"><a class="button button-primary" href="#" data-triangle=".button-overlay"><span>Register</span><span class="button-overlay"></span></a>
+                <div class="rd-navbar-collapse"><a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdXGgwAolJF0DFW9WKOMVaeqxaTDCCdLSsxvfsyM1jH3ZI4dA/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link" data-triangle=".button-overlay"><span>Register</span><span class="button-overlay"></span></a>
                 </div>
               </div>
             </div>
@@ -71,12 +71,135 @@
       <section class="section section-lg bg-default">
         <div class="container">
           <div class="row row-30 justify-content-center">
+            <div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 col-xl-4 my-auto" >
+              <div class="block-address" style="padding-bottom: 1 rem !important;">
+                <div class="block-address-item">
+                  <h5 class="block-address-title">Phone</h5>
+                  <p class="block-address-text"><a href="tel:#">+91 8048470000 </a>
+                  </p>
+                </div>
+          <!--  <div class="block-address-item">
+                  <h5 class="block-address-title">Email</h5>
+                  <p class="block-address-text"><a href="mailto:#">contact@thevictoriousliving.com</a></p>
+                </div>  -->
+            <!--  <div class="block-address-item">
+                  <h5 class="block-address-title">Follow</h5>
+                  <ul class="list-inline list-inline-xs">
+                    <li><a class="icon icon-rect icon-xs icon-white fa-facebook" href="#" data-triangle=".icon-rect-overlay">
+                        <div class="icon-rect-overlay"></div></a></li>
+                    <li><a class="icon icon-rect icon-xs icon-white fa-twitter" href="#" data-triangle=".icon-rect-overlay">
+                        <div class="icon-rect-overlay"></div></a></li>
+                    <li><a class="icon icon-rect icon-xs icon-white fa-linkedin" href="#" data-triangle=".icon-rect-overlay">
+                        <div class="icon-rect-overlay"></div></a></li>
+                    <li><a class="icon icon-rect icon-xs icon-white fa-youtube-play" href="#" data-triangle=".icon-rect-overlay">
+                        <div class="icon-rect-overlay"></div></a></li>
+                  </ul>
+                </div>  -->  
+              </div>
+            </div>
             <div class="col-xs-10 col-sm-9 col-md-6 col-lg-7 col-xl-8">
-              <h6>Contact us</h6>
-              <h3>Have a question? <br>Write a message.
+      <!--    <h6>Contact us</h6>
+              <h3>Have a question? <br>Write a message. -->  
               </h3>
               <!--RD Mailform-->
-              <form class="rd-mailform rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+              
+              <iframe
+              id="JotFormIFrame-221540898405459"
+              title="Contact Us"
+              onload="window.parent.scrollTo(0,0)"
+              allowtransparency="true"
+              allowfullscreen="true"
+              allow="geolocation; microphone; camera"
+              src="https://form.jotform.com/221540898405459"
+              frameborder="0"
+              style="
+              min-width: 100%;
+              height:539px;
+              border:none;"
+              scrolling="no"
+            >
+            </iframe>
+            <script type="text/javascript">
+              var ifr = document.getElementById("JotFormIFrame-221540898405459");
+              if (ifr) {
+                var src = ifr.src;
+                var iframeParams = [];
+                if (window.location.href && window.location.href.indexOf("?") > -1) {
+                  iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+                }
+                if (src && src.indexOf("?") > -1) {
+                  iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+                  src = src.substr(0, src.indexOf("?"))
+                }
+                iframeParams.push("isIframeEmbed=1");
+                ifr.src = src + "?" + iframeParams.join('&');
+              }
+              window.handleIFrameMessage = function(e) {
+                if (typeof e.data === 'object') { return; }
+                var args = e.data.split(":");
+                if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+                if (!iframe) { return; }
+                switch (args[0]) {
+                  case "scrollIntoView":
+                    iframe.scrollIntoView();
+                    break;
+                  case "setHeight":
+                    iframe.style.height = args[1] + "px";
+                    break;
+                  case "collapseErrorPage":
+                    if (iframe.clientHeight > window.innerHeight) {
+                      iframe.style.height = window.innerHeight + "px";
+                    }
+                    break;
+                  case "reloadPage":
+                    window.location.reload();
+                    break;
+                  case "loadScript":
+                    if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+                    var src = args[1];
+                    if (args.length > 3) {
+                        src = args[1] + ':' + args[2];
+                    }
+                    var script = document.createElement('script');
+                    script.src = src;
+                    script.type = 'text/javascript';
+                    document.body.appendChild(script);
+                    break;
+                  case "exitFullscreen":
+                    if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+                    else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+                    else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+                    else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+                    else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+                    break;
+                }
+                var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+                if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+                  var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+                  iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+                }
+              };
+              window.isPermitted = function(originUrl, whitelisted_domains) {
+                var url = document.createElement('a');
+                url.href = originUrl;
+                var hostname = url.hostname;
+                var result = false;
+                if( typeof hostname !== 'undefined' ) {
+                  whitelisted_domains.forEach(function(element) {
+                      if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                          result = true;
+                      }
+                  });
+                  return result;
+                }
+              };
+              if (window.addEventListener) {
+                window.addEventListener("message", handleIFrameMessage, false);
+              } else if (window.attachEvent) {
+                window.attachEvent("onmessage", handleIFrameMessage);
+              }
+              </script>
+        <!--  <form class="rd-mailform rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                 <div class="row row-10 row-narrow-xs">
                   <div class="col-lg-6">
                     <div class="form-wrap">
@@ -102,34 +225,9 @@
                     </div>
                   </div>
                 </div>
-              </form>
+              </form> -->
             </div>
-            <div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 col-xl-4 my-auto">
-              <div class="block-address">
-                <div class="block-address-item">
-                  <h5 class="block-address-title">Phone</h5>
-                  <p class="block-address-text"><a href="tel:#">222 999 888</a>
-                  </p>
-                </div>
-                <div class="block-address-item">
-                  <h5 class="block-address-title">Email</h5>
-                  <p class="block-address-text"><a href="mailto:#">contact@thevictoriousliving.com</a></p>
-                </div>
-            <!--  <div class="block-address-item">
-                  <h5 class="block-address-title">Follow</h5>
-                  <ul class="list-inline list-inline-xs">
-                    <li><a class="icon icon-rect icon-xs icon-white fa-facebook" href="#" data-triangle=".icon-rect-overlay">
-                        <div class="icon-rect-overlay"></div></a></li>
-                    <li><a class="icon icon-rect icon-xs icon-white fa-twitter" href="#" data-triangle=".icon-rect-overlay">
-                        <div class="icon-rect-overlay"></div></a></li>
-                    <li><a class="icon icon-rect icon-xs icon-white fa-linkedin" href="#" data-triangle=".icon-rect-overlay">
-                        <div class="icon-rect-overlay"></div></a></li>
-                    <li><a class="icon icon-rect icon-xs icon-white fa-youtube-play" href="#" data-triangle=".icon-rect-overlay">
-                        <div class="icon-rect-overlay"></div></a></li>
-                  </ul>
-                </div>  -->  
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
